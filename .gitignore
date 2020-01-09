@@ -2,4 +2,4 @@ public/.sass-cache
 public/scss
 node_modules
 .sass-cache
-scss
+public/src/scss

@@ -1,0 +1,55 @@
+%font{
+    &--content{
+        font-family: $opensans;
+    }
+
+    &--headline{
+        font-family: $raleway;
+    }
+
+    &--normal{
+        font-weight: 400;
+    }
+
+    &--bold{
+        font-weight: 700;
+    }
+
+    &--extrabold{
+        font-weight: 800;
+    }
+}
+
+%flex{
+    display: flex;
+
+    //  Justify Content
+    &--js{
+        justify-content: start;
+    }
+
+    &--jc{
+        justify-content: center;
+    }
+
+    &--je{
+        justify-content: flex-end;
+    }
+
+    &--wrap{
+        flex-wrap: wrap;
+    }
+
+    // Align Items
+    &--as{
+        align-items: flex-start;
+    }
+
+    &--ac{
+        align-items: center;
+    }
+
+    &--ae{
+        align-items: flex-end;
+    }
+}
