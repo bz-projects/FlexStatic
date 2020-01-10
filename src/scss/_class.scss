@@ -9,3 +9,13 @@
     padding-left: 10px;
     padding-right: 10px;
 }
+
+.bg{
+    &--orange {
+        background-color: $maincolor;
+    }
+
+    &--darkgrey{
+        background-color: $darkgrey;
+    }
+}

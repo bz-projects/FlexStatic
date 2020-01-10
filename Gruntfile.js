@@ -15,10 +15,6 @@ module.exports = function(grunt) {
         },
         sass: {
           dist: {
-            options: {
-              style: 'compressed',
-              sourcemap: true
-            },
             files: {
               'src/css/style.css': 'src/scss/style.scss'
             }
@@ -30,6 +26,18 @@ module.exports = function(grunt) {
                 tasks: ['sass','autoprefixer']
             }
         },
+        prettify: {
+          options: {
+            config: '.prettifyrc'
+          },
+          all: {
+            expand: true,
+            cwd: '*',
+            ext: '.html',
+            src: ['*.html'],
+            dest: 'public/*'
+          }
+        }
     });
     
     grunt.loadNpmTasks('grunt-contrib-sass');
@@ -37,6 +45,7 @@ module.exports = function(grunt) {
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-autoprefixer');
+    grunt.loadNpmTasks('grunt-prettify');
     grunt.registerTask('default', ['watch']);
   };
   
