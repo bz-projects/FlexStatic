@@ -1,0 +1,16 @@
+:root {
+    /* Global Colors */ 
+    --green: #7EC53E; 
+    --purple: #6E0D78;
+    --white: #ffffff;
+    --lightgrey: #F4F4F4;
+    --darkgrey: #505050;
+
+    /* Global  */ 
+    --mainfont: 'Montserrat', sans-serif;
+    --contentfontsize: 16px;
+    --contentfontlineheight: 150%;
+
+    --space: 21px;
+    --blockspace: 49px;
+}

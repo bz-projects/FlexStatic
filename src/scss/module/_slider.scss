@@ -1,0 +1,17 @@
+.slider{
+    &__item {
+        min-height: 470px;
+        @extend %bg--cover;
+    }
+
+    .swiper-pagination-bullet {
+        width: 12px;
+        height: 12px;
+        background: var(--white);
+        opacity: .9;
+
+        &.swiper-pagination-bullet-active{
+            background-color: var(--green);
+        }
+    }  
+}

@@ -1,0 +1,17 @@
+.about{
+    &__row {
+        @extend %flex; 
+        @extend %flex--ac; 
+    }
+
+    &__image{
+        width: 49%;
+        margin-right: 10px;
+        margin-bottom: var(--space);
+    } 
+
+    &__content {
+        width: 49%;
+        max-width: 513px;
+    }
+}
